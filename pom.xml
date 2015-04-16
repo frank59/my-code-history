@@ -1,11 +1,12 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.geewaza.wangheng</groupId>
-  <artifactId>my-code-history</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  
-  <build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.geewaza.wangheng</groupId>
+	<artifactId>my-code-history</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<build>
 		<finalName>soku-direct-mv</finalName>
 		<plugins>
 			<plugin>
@@ -26,8 +27,8 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	
+
+
 	<dependencies>
 		<dependency>
 			<groupId>commons-lang</groupId>
@@ -48,7 +49,17 @@
 		<dependency>
 			<groupId>asm</groupId>
 			<artifactId>asm</artifactId>
-		<version>3.3.1</version>
-</dependency>
+			<version>3.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+			<version>4.10.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.kzwang</groupId>
+			<artifactId>lire</artifactId>
+			<version>0.9.4-kzwang-beta1</version>
+		</dependency>
 	</dependencies>
 </project>
